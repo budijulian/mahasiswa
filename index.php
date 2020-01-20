@@ -67,15 +67,14 @@
                         <tr>
 
 
-                            <th scope="col">Nama</th>
+                            <th scope="col">ID</th>
 
 
-                            <th scope="col">Nama Barang</th>
+                            <th scope="col">Nama Mahasiswa</th>
 
 
-                            <th scope="col">Satuan</th>
-
-
+                            <th scope="col">Jurusan</th>
+                            <th scope="col">Alamat</th>
                             <th scope="col">NO HP</th>
 
 
@@ -111,20 +110,11 @@
 
 
                                 <tr>
-
-
                                     <td><?= $row['ID'];?></td>
-
-
                                     <td><?= $row['NAMA'];?></td>
-
-
                                     <td><?= $row['JURUSAN'];?></td>
-<td><?= $row['ALAMAR'];?></td>
-<td><?= $row['NOHP'];?></td>
-                               
-
-
+                                    <td><?= $row['ALAMAR'];?></td>
+                                    <td><?= $row['NOHP'];?></td>
                                 </tr>
 
 
