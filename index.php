@@ -76,7 +76,7 @@
                             <th scope="col">Satuan</th>
 
 
-                            <th scope="col" width="200px">Action</th>
+                            <th scope="col">NO HP</th>
 
 
                         </tr>
