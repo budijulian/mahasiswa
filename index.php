@@ -52,12 +52,100 @@
                 <div class="form-group">
                     <td> </td>
                     <td> </td>
-                    <td><input class="btn btn-primary" type="submit" type="button"  value="Submit">
-                        <input class="btn btn-danger" type="reset" type="button"  value="Cancel"></td>
+                    <td><input class="btn btn-primary" type="submit" type="button" name="Submit" value="Submit">
+                        <input class="btn btn-danger" type="reset" type="button" name="reset" value="Cancel"></td>
                 </div>
             </div>
         </form>
+        
+                <table class="table table-stripped">
+
+
+                    <thead>
+
+
+                        <tr>
+
+
+                            <th scope="col">Nama</th>
+
+
+                            <th scope="col">Nama Barang</th>
+
+
+                            <th scope="col">Satuan</th>
+
+
+                            <th scope="col" width="200px">Action</th>
+
+
+                        </tr>
+
+
+                    </thead>
+
+
+                    <tbody>
+
+
+                        <?php
+
+
+                        include "koneksi.php";
+
+
+                        $tsql = "Select * From db_mahasiswa";
+
+
+                        $stmt = sqlsrv_query( $conn, $tsql);
+
+
+
+                        do {
+
+
+                  while ($row = sqlsrv_fetch_array($stmt, SQLSRV_FETCH_ASSOC)) {                                  
+
+
+                                ?>
+
+
+                                <tr>
+
+
+                                    <td><?= $row['ID'];?></td>
+
+
+                                    <td><?= $row['NAMA'];?></td>
+
+
+                                    <td><?= $row['JURUSAN'];?></td>
+<td><?= $row['ALAMAR'];?></td>
+<td><?= $row['NOHP'];?></td>
+                               
+
+
+                                </tr>
+
+
+                                <?php
+
+
+                            }
+
+
+                        } while ( sqlsrv_next_result($stmt) );
+
+
+                        ?>
+
+
+                    </tbody>
+
+
+                </table>  
     </div>
+    
 </body>
 
 </html>
