@@ -52,8 +52,8 @@
                 <div class="form-group">
                     <td> </td>
                     <td> </td>
-                    <td><input class="btn btn-primary" type="submit" type="button" name="Submit" value="Submit">
-                        <input class="btn btn-danger" type="reset" type="button" name="reset" value="Cancel"></td>
+                    <td><input class="btn btn-primary" type="submit" type="button"  value="Submit">
+                        <input class="btn btn-danger" type="reset" type="button"  value="Cancel"></td>
                 </div>
             </div>
         </form>
