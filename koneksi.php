@@ -1,8 +1,11 @@
 <?php
 
-$koneksi = mysqli_connect("localhost","root","","db_mahasiswa");
+$koneksi = sqlsrv_connect("mahasiswaazureserver","budijulian","24Budi24","db_mahasiswa");
  
 // Check connection
-if (mysqli_connect_errno()){
-	echo "Koneksi database gagal : " . mysqli_connect_error();
+if ($koneksi){
+	echo " Koneksi  berhasil";
+}
+else{
+    echo " KOneksi tidak Berhasil"; die(print_r(sqlsrv_errors(),true));
 }
