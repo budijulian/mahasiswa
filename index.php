@@ -113,7 +113,7 @@
                                     <td><?= $row['ID'];?></td>
                                     <td><?= $row['NAMA'];?></td>
                                     <td><?= $row['JURUSAN'];?></td>
-                                    <td><?= $row['ALAMAR'];?></td>
+                                    <td><?= $row['ALAMAT'];?></td>
                                     <td><?= $row['NOHP'];?></td>
                                 </tr>
 
